@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MENÚ EXPRESS</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+                <nav class="menuPrin">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="acerca-de.html">ACERCA DE</a></li>
+                        <li class="logo"><a href="index.html"><img src="img/logo.png"></a></li>
+                        <li><a href="servicio.html">SERVICIO</a></a></li>
+                        <li><a href="contactenos.html">CONTACTENOS</a></a></li>
+                    </ul>
+                </nav>
+        </header>
+        <div class="container">
+            <div class="main">
+                <div class="col1">
+                    <form class="busqueda">
+                        <label for="">DEPARTAMENTO</label>
+                        <input type="text" name="" value="Lima"/>
+                        <label for="">DISTRITO</label>
+                        <select>
+                            <option>Selecciona distrito</option>
+                            <option>San Isidro</option>
+                            <option>La Victoria</option>
+                        </select>
+                        <input type="button" value="Buscar" name=""/>
+                    </form>
+                    <form class="registro">
+                        <h3>INICIAR SESIÓN</h3>
+                        <div class="contReg">
+                        <label for="">USUARIO</label>
+                        <input type="text" name="" value=""/>
+                        <label for="">CONTRASEÑA</label>
+                        <input type="text" name="" value=""/>
+                        <input type="button" value="Ingresar" name=""/>
+                        <input type="button" value="Registrate" name=""/>
+                        </div>
+                    </form>
+                </div>
+                <div class="col2">
+                    <div class="contBloq noBorBot">
+                        <div class="imgRestM"><img src="img/rest1.jpg" alt="" width="100%"></div>
+                        <div class="detaRest noBBH">
+                            <h2>Nombre del local</h2>
+                            <p>Dirección</p>
+                            <p>Teléfono</p>
+                            <p>Correo electrónico</p>
+                        </div>
+                        <div class="clear"></div>
+                    
+                        <h4 class="nomMenu">Lunes 20/05/2015<br>Menú Delivery: S/. 13.00</h4>
+                        <p class="nomPla">Entradas: S/. 6.00</p>
+                        <ul class="nomLis">
+                            <li><input type="checkbox" name=mybox value="1" ><span>E1) Chicharron de pollo con yuquitas</span></li>
+                            <li><input type="checkbox" name=mybox value="2" ><span>E2) Sopa de menestrón</span></li>
+                            <li><input type="checkbox" name=mybox value="3" checked><span>E3) Causa de pollo</span></li>
+                            <li><input type="checkbox" name=mybox value="4" ><span>E4) Tequeños c/guacamole</span></li>
+                        </ul>
+                        <p class="nomPla">Segundos: S/. 8.50</p>
+                        <ul class="nomLis">
+                            <li><input type="checkbox" name=mybox value="1" ><span>S1) Seco de res a la norteña</span></li>
+                            <li><input type="checkbox" name=mybox value="2" ><span>S2) Pollo dorado c/papas fritas y ensaladas</span></li>
+                            <li><input type="checkbox" name=mybox value="3" checked><span>S3) Carapulcra de pollo</span></li>
+                            <li><input type="checkbox" name=mybox value="4" ><span>S4) Lomo saltado con fetuccini</span></li>
+                        </ul>
+                        <p class="nomPla">Refresco: S/. 1.50</p>
+                        <div class="camPed"><input type="button" value="Realizar pedido" onclick="location.href = 'pedido.html'"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acerca-de.html">Acerca de</a></li>
+                <li><a href="servicio.html">Servicio</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

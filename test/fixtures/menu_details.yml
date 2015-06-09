@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_local: 1
+  qt_precio: 1
+  co_menu: 1
+  co_plato: 1
+  co_detallemenu: 1
+
+two:
+  co_local: 1
+  qt_precio: 1
+  co_menu: 1
+  co_plato: 1
+  co_detallemenu: 1

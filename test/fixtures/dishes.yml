@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_plato: 1
+  no_plato: MyString
+  no_tipoplato: MyString
+
+two:
+  co_plato: 1
+  no_plato: MyString
+  no_tipoplato: MyString

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_direccion: 1
+  no_direccion: MyString
+  co_distrito: 1
+
+two:
+  co_direccion: 1
+  no_direccion: MyString
+  co_distrito: 1

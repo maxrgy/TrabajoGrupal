@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_menu: 1
+  fe_fecha: 2015-06-08
+  qt_menu: 1
+  co_local: 1
+
+two:
+  co_menu: 1
+  fe_fecha: 2015-06-08
+  qt_menu: 1
+  co_local: 1

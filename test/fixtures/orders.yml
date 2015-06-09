@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_pedido: 1
+  email: MyString
+  qt_montototal: 
+  estado: MyString
+  co_local: 1
+
+two:
+  co_pedido: 1
+  email: MyString
+  qt_montototal: 
+  estado: MyString
+  co_local: 1

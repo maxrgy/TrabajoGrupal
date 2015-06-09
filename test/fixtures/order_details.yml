@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  co_detallepedido: 1
+  co_plato: 1
+  no_tipoplato: MyString
+  string: MyString
+  qt_precio: 
+  qt_cantidad: 1
+  co_pedido: 1
+
+two:
+  co_detallepedido: 1
+  co_plato: 1
+  no_tipoplato: MyString
+  string: MyString
+  qt_precio: 
+  qt_cantidad: 1
+  co_pedido: 1
