@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150608234915) do
+ActiveRecord::Schema.define(version: 20150610021826) do
 
   create_table "addresses", force: :cascade do |t|
     t.integer  "co_direccion", limit: 4,   null: false
@@ -34,15 +34,25 @@ ActiveRecord::Schema.define(version: 20150608234915) do
   add_index "client_addresses", ["email"], name: "index_client_addresses_on_email", using: :btree
 
   create_table "clients", force: :cascade do |t|
-    t.string   "email",      limit: 255, null: false
-    t.string   "name",       limit: 255
-    t.string   "phone",      limit: 255
-    t.string   "password",   limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "name",                   limit: 255
+    t.string   "phone",                  limit: 255
+    t.string   "password",               limit: 255
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
+    t.string   "email",                  limit: 255, default: "", null: false
+    t.string   "encrypted_password",     limit: 255, default: "", null: false
+    t.string   "reset_password_token",   limit: 255
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          limit: 4,   default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip",     limit: 255
+    t.string   "last_sign_in_ip",        limit: 255
   end
 
-  add_index "clients", ["email"], name: "index_clients_on_email", using: :btree
+  add_index "clients", ["email"], name: "index_clients_on_email", unique: true, using: :btree
+  add_index "clients", ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true, using: :btree
 
   create_table "dishes", force: :cascade do |t|
     t.integer  "co_plato",     limit: 4,   null: false
@@ -113,17 +123,28 @@ ActiveRecord::Schema.define(version: 20150608234915) do
   add_index "orders", ["co_pedido"], name: "index_orders_on_co_pedido", using: :btree
 
   create_table "restaurants", force: :cascade do |t|
-    t.integer  "co_local",    limit: 4,   null: false
-    t.string   "name",        limit: 255
-    t.integer  "co_distrito", limit: 4
-    t.string   "email",       limit: 255
-    t.string   "password",    limit: 255
-    t.string   "telefono",    limit: 255
-    t.string   "direccion",   limit: 255
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.integer  "co_local",               limit: 4,                null: false
+    t.string   "name",                   limit: 255
+    t.integer  "co_distrito",            limit: 4
+    t.string   "password",               limit: 255
+    t.string   "telefono",               limit: 255
+    t.string   "direccion",              limit: 255
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
+    t.string   "email",                  limit: 255, default: "", null: false
+    t.string   "encrypted_password",     limit: 255, default: "", null: false
+    t.string   "reset_password_token",   limit: 255
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          limit: 4,   default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip",     limit: 255
+    t.string   "last_sign_in_ip",        limit: 255
   end
 
   add_index "restaurants", ["co_local"], name: "index_restaurants_on_co_local", using: :btree
+  add_index "restaurants", ["email"], name: "index_restaurants_on_email", unique: true, using: :btree
+  add_index "restaurants", ["reset_password_token"], name: "index_restaurants_on_reset_password_token", unique: true, using: :btree
 
 end

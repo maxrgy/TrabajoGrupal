@@ -9,10 +9,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= render "shared/header" %>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<header>
+    <nav class="menuPrin">
+      <div class="conPerfil"><a href="perfil.html">>> Mi perfil</a></div>
+      <ul>
+        <li><a href="home/index">INICIO</a></li>
+        <li><a href="home/acercade">ACERCA DE</a></li>
+        <li class="logo"><a href="home/index"><%= image_tag "logo.png" %></a></li>
+        <li><a href="home/servicio">SERVICIO</a></a></li>
+        <li><a href="home/contactenos">CONTACTENOS</a></a></li>
+      </ul>
+    </nav>
+</header>
 <%= yield %>
-<%= render "shared/footer" %>
+<footer>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca-de.html">Acerca de</a></li>
+        <li><a href="servicio.html">Servicio</a></li>
+        <li><a href="contactenos.html">Contáctenos</a></li>
+    </ul>
+</footer>
 
 </body>
 </html>

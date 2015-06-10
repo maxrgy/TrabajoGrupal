@@ -1,5 +1,21 @@
 Rails.application.routes.draw do
   
+  devise_for :restaurants
+  devise_for :clients, :path_names => { :sign_in => "home/index" }  
+  
+  #get 'home/index'
+  
+  #get 'home/acercade'
+
+  #get 'home/servicio'
+
+  #get 'home/contactenos'
+  
+  get "/inicio" => "home#index", :as => :index
+  get "/acercade" => "home#acercade", :as => :acercade
+  get "/servicio" => "home#servicio", :as => :servicio
+  get "/contactenos" => "home#contactenos", :as => :contactenos
+  
   root 'home#index'
   
   # The priority is based upon order of creation: first created -> highest priority.

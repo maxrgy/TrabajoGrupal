@@ -4,7 +4,6 @@ class CreateRestaurants < ActiveRecord::Migration
       t.integer :co_local, null:false
       t.string :name
       t.integer :co_distrito
-      t.string :email
       t.string :password
       t.string :telefono
       t.string :direccion
