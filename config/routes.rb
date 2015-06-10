@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   
   devise_for :restaurants
-  devise_for :clients, :path_names => { :sign_in => "home/index" }  
+  
+  devise_for :clients
+  
   
   #get 'home/index'
   
