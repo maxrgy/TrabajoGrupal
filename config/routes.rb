@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   #get 'home/contactenos'
   
+  
   get "/inicio" => "home#index", :as => :index
   get "/acercade" => "home#acercade", :as => :acercade
   get "/servicio" => "home#servicio", :as => :servicio
